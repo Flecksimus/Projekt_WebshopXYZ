@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Produkte - E-Shop XYZ</title>
+    <link rel="stylesheet" href="css/styles.css">
+    <link rel="stylesheet" href="css/products.css">
+</head>
+<body>
+    <header>
+        <h1>Produkte</h1>
+        <nav>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="products.html">Produkte</a></li>
+                <li><a href="cart.html">Warenkorb</a></li>
+                <li><a href="register.php">Registrieren</a></li>
+                <li><a href="login.php">Login</a></li>
+            </ul>
+        </nav>
+    </header>
+    <aside>
+        <form id="filter-form" class="filter-container">
+            <h2 class="filter-header">Filtern nach Preis</h2>
+            <ul>
+                <li><a href="#" data-filter="all">Alle Produkte</a></li>
+                <li><a href="#" data-filter="under-30">Unter 30 €</a></li>
+                <li><a href="#" data-filter="30-50">30 € - 50 €</a></li>
+                <li><a href="#" data-filter="over-50">Über 50 €</a></li>
+            </ul>
+        </form>
+    </aside>
+    <main>
+        <div class="products-container">
+            <!-- Produkt 1 -->
+            <div class="product" data-name="Hoodie Urban Grau" data-price="49.99">
+                <img src="Fotos/1.jpg" alt="Produktbild 1">
+                <h2>Hoodie Urban Grau</h2>
+                <p>Bequemer grauer Hoodie für den Alltag.</p>
+                <p>Preis: 49,99 €</p>
+                <button class="add-to-cart">In den Warenkorb</button>
+            </div>
+            <!-- Produkt 2 -->
+            <div class="product" data-name="Basic Sweatshirt" data-price="29.99">
+                <img src="Fotos/2.jpg" alt="Produktbild 2">
+                <h2>Basic Sweatshirt</h2>
+                <p>Klassisches Sweatshirt aus weicher Baumwolle.</p>
+                <p>Preis: 29,99 €</p>
+                <button class="add-to-cart">In den Warenkorb</button>
+            </div>
+            <!-- Produkt 3 -->
+            <div class="product" data-name="Slim Fit Jeans" data-price="19.99">
+                <img src="Fotos/3.jpg" alt="Produktbild 3">
+                <h2>Slim Fit Jeans</h2>
+                <p>Moderne Jeans in schmaler Passform.</p>
+                <p>Preis: 19,99 €</p>
+                <button class="add-to-cart">In den Warenkorb</button>
+            </div>
+            <!-- Produkt 4 -->
+            <div class="product" data-name="Lederschuhe Elegant" data-price="59.99">
+                <img src="Fotos/4.jpg" alt="Produktbild 4">
+                <h2>Lederschuhe Elegant</h2>
+                <p>Hochwertige Lederschuhe für besondere Anlässe.</p>
+                <p>Preis: 59,99 €</p>
+                <button class="add-to-cart">In den Warenkorb</button>
+            </div>
+            <!-- Produkt 5 -->
+            <div class="product" data-name="Casual T-Shirt" data-price="39.99">
+                <img src="Fotos/5.jpg" alt="Produktbild 5">
+                <h2>Casual T-Shirt</h2>
+                <p>Lässiges T-Shirt mit trendigem Design.</p>
+                <p>Preis: 39,99 €</p>
+                <button class="add-to-cart">In den Warenkorb</button>
+            </div>
+            <!-- Produkt 6 -->
+            <div class="product" data-name="Sommer Shorts" data-price="24.99">
+                <img src="Fotos/6.jpg" alt="Produktbild 6">
+                <h2>Sommer Shorts</h2>
+                <p>Leichte Shorts für warme Tage.</p>
+                <p>Preis: 24,99 €</p>
+                <button class="add-to-cart">In den Warenkorb</button>
+            </div>
+            <!-- Produkt 7 -->
+            <div class="product" data-name="Regular Fit Jeans" data-price="69.99">
+                <img src="Fotos/7.jpg" alt="Produktbild 7">
+                <h2>Regular Fit Jeans</h2>
+                <p>Bequeme Jeans in regulärer Passform.</p>
+                <p>Preis: 69,99 €</p>
+                <button class="add-to-cart">In den Warenkorb</button>
+            </div>
+            <!-- Produkt 8 -->
+            <div class="product" data-name="Business Schuhe Braun" data-price="14.99">
+                <img src="Fotos/8.jpg" alt="Produktbild 8">
+                <h2>Business Schuhe Braun</h2>
+                <p>Elegante braune Schuhe für das Büro.</p>
+                <p>Preis: 14,99 €</p>
+                <button class="add-to-cart">In den Warenkorb</button>
+            </div>
+            <!-- Produkt 9 -->
+            <div class="product" data-name="Grafik T-Shirt" data-price="89.99">
+                <img src="Fotos/9.jpg" alt="Produktbild 9">
+                <h2>Grafik T-Shirt</h2>
+                <p>T-Shirt mit modernem Grafikdruck.</p>
+                <p>Preis: 89,99 €</p>
+                <button class="add-to-cart">In den Warenkorb</button>
+            </div>
+            <!-- Produkt 10 -->
+            <div class="product" data-name="Winterjacke Parka" data-price="99.99">
+                <img src="Fotos/10.jpg" alt="Produktbild 10">
+                <h2>Winterjacke Parka</h2>
+                <p>Warme Winterjacke mit Kapuze.</p>
+                <p>Preis: 99,99 €</p>
+                <button class="add-to-cart">In den Warenkorb</button>
+            </div>
+        </div>
+    </main>
+    <footer>
+        <p>&copy; 2024 E-Shop XYZ. Alle Rechte vorbehalten.</p>
+    </footer>
+    <script src="skripte/scripts.js"></script>
+    <script src="skripte/cart.js"></script>
+    <script src="skripte/filter.js"></script>
+</body>
+</html>

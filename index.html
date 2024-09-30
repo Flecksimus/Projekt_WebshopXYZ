@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>E-Shop XYZ</title>
+    <link rel="stylesheet" href="css/styles.css">
+    <link rel="stylesheet" href="css/home.css">
+    <style>
+
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Willkommen bei E-Shop XYZ</h1>
+        <nav>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="products.html">Produkte</a></li>
+                <li><a href="cart.html">Warenkorb</a></li>
+                <li><a href="register.php">Registrieren</a></li>
+                <li><a href="login.php">Login</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <section class="hero">
+            <div class="slideshow">
+                <img src="Fotos/1.jpg" alt="Produktbild 1">
+                <img src="Fotos/2.jpg" alt="Produktbild 2">
+                <img src="Fotos/3.jpg" alt="Produktbild 3">
+                <img src="Fotos/4.jpg" alt="Produktbild 4">
+                <img src="Fotos/5.jpg" alt="Produktbild 5">
+            </div>
+            <h2>Die Zukunft des Einkaufens ist hier</h2>
+            <p>Erleben Sie eine völlig neue Art des Online-Shoppings mit modernster Technologie und unvergleichlichem Komfort.</p>
+            <a href="products.html" class="cta-button">Jetzt einkaufen</a>
+        </section>
+        <section class="features">
+            <div class="feature">
+                <img src="icons/secure.png" alt="Sicher">
+                <h3>Sicher</h3>
+                <p>Ihre Daten sind bei uns in sicheren Händen.</p>
+            </div>
+            <div class="feature">
+                <img src="icons/fast.png" alt="Schnell">
+                <h3>Schnell</h3>
+                <p>Blitzschneller Versand für alle Bestellungen.</p>
+            </div>
+            <div class="feature">
+                <img src="icons/support.png" alt="Support">
+                <h3>Support</h3>
+                <p>Unser 24/7 Kundensupport ist immer für Sie da.</p>
+            </div>
+        </section>
+    </main>
+    <footer>
+        <p>&copy; 2024 E-Shop XYZ. Alle Rechte vorbehalten.</p>
+    </footer>
+    <script src="skripte/scripts.js"></script>
+    <script>
+        // Wartet, bis das DOM vollständig geladen ist, bevor das Skript ausgeführt wird
+        document.addEventListener("DOMContentLoaded", function() {
+            // Selektiert alle Bilder innerhalb der Slideshow
+            const images = document.querySelectorAll('.slideshow img');
+            let currentImageIndex = 0; // Index des aktuellen angezeigten Bildes
+    
+            // Funktion, um das nächste Bild anzuzeigen
+            function showNextImage() {
+                images[currentImageIndex].style.display = 'none'; // Versteckt das aktuelle Bild
+                currentImageIndex = (currentImageIndex + 1) % images.length; // Berechnet den Index des nächsten Bildes
+                images[currentImageIndex].style.display = 'block'; // Zeigt das nächste Bild an
+            }
+    
+            // Zeigt das erste Bild beim Laden der Seite an
+            images[currentImageIndex].style.display = 'block';
+    
+            // Automatisches Wechseln der Bilder alle 3 Sekunden
+            setInterval(showNextImage, 3000);
+        });
+    </script>
+    
+</body>
+</html>
