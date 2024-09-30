@@ -1,4 +1,4 @@
-###Webshop XYZ
+### Webshop XYZ
 
 Willkommen bei Webshop XYZ! Hier findest du eine breite Auswahl an Produkten, die du einfach und bequem online einkaufen kannst.
 
@@ -17,7 +17,7 @@ Klone das Repository:
 
 bash
 Code kopieren
-git clone https://github.com/deinbenutzername/webshop-xyz.git
+git clone (https://github.com/Flecksimus/Projekt_WebshopXYZ)
 Installiere die benötigten Abhängigkeiten (falls erforderlich).
 
 Richte die Datenbank ein, indem du die SQL-Skripte in mysql.php verwendest.
