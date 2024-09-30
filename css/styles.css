@@ -1,0 +1,48 @@
+/* Grundlegende Stile */
+
+header {
+    background-color: #333;
+    color: #00d2ff;
+    text-align: center;
+    padding: 1rem;
+}
+footer {
+    position: fixed;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    background-color: #333;
+    color: #00d2ff;
+    text-align: center;
+    padding: 1rem;
+}
+
+
+header h1, .cart-total h3 {
+    text-shadow: 0 0 10px #00d2ff, 0 0 20px #00d2ff;
+}
+
+nav ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    justify-content: center;
+    gap: 2rem;
+}
+
+nav ul li a {
+    color: #00d2ff;
+    text-decoration: none;
+    font-size: 1.2rem;
+    transition: color 0.3s;
+}
+
+nav ul li a:hover {
+    color: #fff;
+    text-shadow: 0 0 5px #00d2ff, 0 0 10px #00d2ff;
+}
+
+main {
+    padding: 2rem;
+}

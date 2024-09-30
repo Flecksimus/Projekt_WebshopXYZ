@@ -1,0 +1,103 @@
+/* Allgemeine Stile für den Filterbereich */
+.filter-container {
+    background-color: #1a1a1a; /* Dunkle Hintergrundfarbe */
+    color: #00d2ff; /* Neonfarbener Text */
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.5); /* Stärkerer Schatten */
+    margin-bottom: 20px;
+    margin-top: 60px; /* Mehr Abstand zum Header */
+    position: relative;
+    overflow: hidden;
+}
+
+/* Stil für das Pseudo-Element vor dem Filtercontainer */
+.filter-container::before {
+    content: '';
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    width: 200%;
+    height: 200%;
+    background: radial-gradient(circle, transparent, #00d2ff, transparent);
+    transform: translate(-50%, -50%);
+    opacity: 0.1;
+    pointer-events: none;
+}
+
+/* Stile für die Überschrift im Filterbereich */
+.filter-header {
+    font-size: 1.8rem;
+    font-weight: bold;
+    text-align: center;
+    margin-bottom: 20px;
+    text-transform: uppercase;
+    text-shadow: 0 0 5px #00d2ff, 0 0 10px #00d2ff; 
+}
+
+/* Stile für ungeordnete Listen */
+ul {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+}
+
+/* Stile für Listenelemente in ungeordneten Listen */
+ul li {
+    margin-bottom: 10px;
+}
+
+/* Stile für Links in ungeordneten Listen */
+ul li a {
+    display: block;
+    padding: 10px;
+    text-decoration: none;
+    color: #00d2ff;
+    transition: all 0.3s ease;
+    border-radius: 5px;
+    text-align: center;
+    font-size: 1.2rem;
+    position: relative;
+    z-index: 1;
+}
+
+/* Stil für das Pseudo-Element vor Links in ungeordneten Listen */
+ul li a::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(45deg, #00d2ff, #3a7bd5);
+    transform: scaleX(0);
+    transform-origin: right;
+    transition: transform 0.3s ease;
+    z-index: -1;
+    border-radius: 5px;
+}
+
+/* Stile für Hover-Effekte auf Links in ungeordneten Listen */
+ul li a:hover::before {
+    transform: scaleX(1);
+    transform-origin: left;
+}
+
+/* Stile für Hover-Effekte auf Links in ungeordneten Listen */
+ul li a:hover {
+    color: #fff;
+    text-shadow: 0 0 5px #00d2ff, 0 0 10px #00d2ff;
+}
+
+/* Responsives Design für kleinere Bildschirme */
+@media (max-width: 768px) {
+    /* Anpassung der Polsterung und des oberen Abstands des Filtercontainers */
+    .filter-container {
+        padding: 15px;
+        margin-top: 20px; 
+    }
+    /* Anpassung der Schriftgröße der Überschrift im Filterbereich */
+    .filter-header {
+        font-size: 1.5rem;
+    }
+}
