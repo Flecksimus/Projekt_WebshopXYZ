@@ -7,11 +7,13 @@ Produkte durchsuchen: Durchstöbere unsere Produktkategorien.
 Warenkorb: Füge Produkte zu deinem Warenkorb hinzu und verwalte sie.
 Benutzerregistrierung und -login: Erstelle ein Konto, um deinen Einkauf zu erleichtern.
 Sichere Zahlungsmöglichkeiten: Einfacher und sicherer Checkout-Prozess.
+
 🚀 Technologien
 HTML: Strukturierung der Webseite.
 CSS: Gestaltung und Layout.
 JavaScript: Interaktive Funktionen wie Filter und Warenkorbverwaltung.
 PHP: Serverseitige Logik und Datenbankanfragen.
+
 🔧 Installation
 Klone das Repository:
 
